@@ -17,7 +17,7 @@ dependencies {
     runtimeOnly("com.h2database:h2:2.2.222")
     implementation("org.flywaydb:flyway-core:9.22.0")
 
-    implementation("org.springdoc:springdoc-openapi-starter-webmvc-api:2.2.0")
+    implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.2.0")
 
     compileOnly("org.projectlombok:lombok")
     annotationProcessor("org.projectlombok:lombok")
