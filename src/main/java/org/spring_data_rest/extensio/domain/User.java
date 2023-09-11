@@ -1,5 +1,6 @@
 package org.spring_data_rest.extensio.domain;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -35,6 +36,6 @@ public class User {
     private String login;
 
     @NotEmpty
-    @OneToMany
+    @OneToMany(cascade = CascadeType.ALL)
     private Collection<Attribute> attributes;
 }
