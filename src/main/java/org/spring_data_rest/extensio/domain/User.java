@@ -36,6 +36,6 @@ public class User {
     private String login;
 
     @NotEmpty
-    @OneToMany(cascade = CascadeType.ALL)
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "user")
     private Collection<Attribute> attributes;
 }

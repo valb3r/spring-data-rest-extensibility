@@ -9,6 +9,8 @@ spring:
     properties:
       hibernate:
         globally_quoted_identifiers: true
+    hibernate:
+      ddl-auto: validate
   data:
     rest:
       base-path: /v1/resources
